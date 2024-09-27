@@ -4,28 +4,36 @@ body{
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
     margin: auto;
 }
 .header{
     border: 1px solid black;
     width: 100%;
-    height: 120px;
-    background-color: aqua;
+    height: 50px;
+    background-color: rgb(39, 200, 200);
+}
+.container-fluid{
+    border: 5px solid green;
+    width: 100%;
+    height: 1000px;
+    display: flex;
 }
 .wrapper{
-    width: 1200px;
-    height: 1000px;
+    width: 400px;
+    height: 100%;
     border: 1px solid black;
-    margin: 0px auto;
     background-color: rebeccapurple;
 }
 .main{
     border: 1px solid black;
-    height: 200px;
+    height: 100%;
+    flex-grow: 1;
 }
-.footer{
-    height: 50px;
+.footer {
+    height: 30px;
     position: fixed;
+    bottom: 0; /* Fix the footer to the bottom */
+    width: 100%; /* Make sure the footer stretches across the page */
     border: 1px solid black;
+    background-color: burlywood; /* Optional background color */
 }
